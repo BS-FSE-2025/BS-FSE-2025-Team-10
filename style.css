@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -86,3 +87,94 @@ body {
 .contact-form button:hover {
   background: #660000;
 }
+=======
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #800000;
+  position: relative;
+}
+
+
+.scm-brand {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+  color: white;
+}
+
+.scm-brand h1 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.scm-brand p {
+  font-size: 12px;
+  margin: 0;
+}
+
+
+.contact-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #333;
+}
+
+.contact-form label.subject-label {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+
+.contact-form button {
+  background: #800000;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #660000;
+}
+>>>>>>> f32878400aa4cd551c35572603595367b5c827b2
