@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     
-    alert(Thank you, ${name}! Your technical issue has been submitted.);
+    alert(`Thank you, ${name}! Your technical issue has been submitted.`);
     form.reset(); 
   });
 });
+
