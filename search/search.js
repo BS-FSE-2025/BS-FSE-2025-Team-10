@@ -6,30 +6,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchResult = document.getElementById("search-result");
     const backButton = document.getElementById("back-button");
   
-    // عند إرسال النموذج
     form.addEventListener("submit", (event) => {
-      event.preventDefault(); // منع التحديث الافتراضي للصفحة
+      event.preventDefault(); 
       const query = searchInput.value.trim();
       if (!query) {
         alert("Please enter something to search!");
         return;
       }
   
-      // عرض صفحة النتائج وإخفاء صفحة البحث
       searchPage.style.display = "none";
       resultPage.style.display = "block";
   
-      // عرض النص في صفحة النتائج
       searchResult.textContent = `You searched for: "${query}"`;
     });
   
-    // عند الضغط على زر الرجوع
     backButton.addEventListener("click", () => {
-      // عرض صفحة البحث وإخفاء صفحة النتائج
       searchPage.style.display = "block";
       resultPage.style.display = "none";
   
-      // مسح النص المدخل
       searchInput.value = "";
     });
   });
