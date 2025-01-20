@@ -14,16 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
   
-      // عرض الإشعار
       notification.textContent = `Thank you, ${name}! Your message has been sent to ${recipient}.`;
       notification.style.display = "block";
   
-      // إخفاء الإشعار بعد دقيقة
       setTimeout(() => {
         notification.style.display = "none";
       }, 60000);
   
-      form.reset(); // إعادة تعيين النموذج
+      form.reset(); 
     });
   });
   
