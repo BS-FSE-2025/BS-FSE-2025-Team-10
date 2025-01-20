@@ -1,19 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const role = localStorage.getItem("userRole"); // التحقق من الدور في Local Storage
+    const role = localStorage.getItem("userRole");
   
     if (role === "user") {
-      window.location.href = "user.html"; // التوجيه إلى صفحة User
+      window.location.href = "user.html"; 
     } else if (role === "worker") {
-      window.location.href = "worker.html"; // التوجيه إلى صفحة Worker
+      window.location.href = "worker.html"; 
     } else {
-      console.log("No role selected. User stays on the main page."); // البقاء على الصفحة الرئيسية
+      console.log("No role selected. User stays on the main page."); 
     }
   });
   
-  // وظيفة لتبديل الدور عند الاختيار
   function switchRole(newRole) {
-    localStorage.setItem("userRole", newRole); // تخزين الدور الجديد
-    alert(`You registered as a ${newRole}.`); // عرض رسالة تأكيد
-    window.location.reload(); // تحديث الصفحة لتطبيق التغيير
+    localStorage.setItem("userRole", newRole); 
+    alert(`You registered as a ${newRole}.`); 
+    window.location.reload(); 
   }
   
