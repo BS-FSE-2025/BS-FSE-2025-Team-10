@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
   
-      // عرض الإشعار
       notification.textContent = `Thank you! Your issue has been sent to the admin.`;
       notification.style.display = "block";
   
-      // إخفاء الإشعار بعد دقيقة
       setTimeout(() => {
         notification.style.display = "none";
       }, 60000);
