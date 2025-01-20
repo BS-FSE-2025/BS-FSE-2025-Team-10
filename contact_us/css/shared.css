@@ -36,12 +36,12 @@ body {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    text-align: left; /* جعل النص يبدأ من اليسار */
-    box-sizing: border-box; /* لتجنب تجاوز الحدود */
+    text-align: left; 
+    box-sizing: border-box; 
 }
 
 .contact-container label {
-    text-align: left; /* النص الخاص بالعناوين يبدأ من اليسار */
+    text-align: left; 
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
@@ -49,8 +49,8 @@ body {
 }
 
 .contact-container textarea {
-    resize: none; /* منع تغيير حجم حقل النص */
-    height: 80px; /* ارتفاع الحقل النصي */
+    resize: none; 
+    height: 80px; 
 }
 
 .contact-container h2 {
@@ -95,9 +95,9 @@ body {
 
 .scm-brand {
     position: absolute;
-    top: 20px; /* المسافة من الأعلى */
-    left: 20px; /* المسافة من اليسار */
-    text-align: left; /* تنسيق النص باتجاه اليسار */
+    top: 20px; 
+    left: 20px; 
+    text-align: left; 
     color: white;
-    margin-right: 20px; /* ترك مسافة إضافية بين العلامة والمستطيل الأبيض */
+    margin-right: 20px; 
 }

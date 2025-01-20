@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
   
-      // إشعار بسيط
       notificationMessage.textContent = `Thank you for your feedback with a rating of ${rating} stars.`;
       notification.style.display = "block";
   
-      // الإشعار يختفي بعد دقيقة واحدة
       setTimeout(() => {
         notification.style.display = "none";
       }, 60000);
