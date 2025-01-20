@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="notification" class="notification">
+    <button id="close-notification">×</button>
+    <span id="notification-message"></span>
+  </div>
+
+  <div class="scm-brand">
+    <h1>SCM</h1>
+    <p>Smart Community Map</p>
+  </div>
+  <div id="feedback-notification" style="display: none;" class="notification"></div>
+
+  <div class="feedback-container">
+    <div class="feedback-header">
+      <h2>Share Your Feedback</h2>
+      <p>Your opinion matters to us! Please leave a rating and your feedback below.</p>
+    </div>
+    <form class="feedback-form">
+      <div class="feedback-row">
+        <label for="rating">Rate Us</label>
+        <select id="rating" required>
+          <option value="" disabled selected>Select Rating</option>
+          <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+          <option value="4">⭐⭐⭐⭐ Very Good</option>
+          <option value="3">⭐⭐⭐ Good</option>
+          <option value="2">⭐⭐ Fair</option>
+          <option value="1">⭐ Poor</option>
+        </select>
+      </div>
+
+      <div class="feedback-row">
+        <label for="comments">Your Feedback</label>
+        <textarea id="comments" placeholder="Write your feedback..." required></textarea>
+      </div>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
