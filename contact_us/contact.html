@@ -15,7 +15,6 @@
       height: 100vh;
       background-color: #800000;
       color: white;
-      text-align: center;
     }
 
     .container {
@@ -23,19 +22,19 @@
     }
 
     h1 {
-      margin-bottom: 20px;
       font-size: 36px;
+      margin-bottom: 20px;
     }
 
     p {
-      margin-bottom: 15px;
       font-size: 18px;
+      margin-bottom: 30px;
     }
 
     .role-buttons {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      gap: 20px;
     }
 
     .role-buttons button {
@@ -43,10 +42,11 @@
       color: #800000;
       border: none;
       padding: 10px 20px;
-      border-radius: 5px;
       font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .role-buttons button:hover {
@@ -60,15 +60,15 @@
     <h1>Welcome to Contact Us</h1>
     <p>Select your role:</p>
     <div class="role-buttons">
-      <button onclick="switchRole('user')">Register as User</button>
-      <button onclick="switchRole('worker')">Register as Worker</button>
+      <button onclick="navigateTo('user')">Register as User</button>
+      <button onclick="navigateTo('worker')">Register as Worker</button>
     </div>
   </div>
+
   <script>
-    function switchRole(role) {
+    function navigateTo(role) {
       localStorage.setItem('userRole', role);
-      alert(`You registered as a ${role}`);
-      window.location.href = role === 'user' ? './user.html' : './worker.html';
+      window.location.href = role === 'user' ? 'user.html' : 'worker.html';
     }
   </script>
 </body>

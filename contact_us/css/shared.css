@@ -1,84 +1,21 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #800000;
+    color: white;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #800000;
-    color: white;
-}
-
-.contact-container {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 350px;
-    color: #333;
-}
-
-.contact-container h2 {
-    text-align: center;
-    color: #800000;
-}
-
-.contact-container label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-container input, 
-.contact-container select, 
-.contact-container textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: left; 
-    box-sizing: border-box; 
-}
-
-.contact-container label {
-    text-align: left; 
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.contact-container textarea {
-    resize: none; 
-    height: 80px; 
-}
-
-.contact-container h2 {
-    text-align: center;
-    color: #800000;
-    margin-bottom: 20px;
-}
-
-.contact-container button {
-    display: block;
-    width: 100%;
-    background: #800000;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-container button:hover {
-    background: #660000;
-}
-
-
-
-.notification {
+  }
+  
+  .scm-brand {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  .notification {
     display: none;
     position: fixed;
     top: 20px;
@@ -88,16 +25,58 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 14px;
-    text-align: center;
     z-index: 1000;
-}
-
-.scm-brand {
-    position: absolute;
-    top: 20px; 
-    left: 20px; 
-    text-align: left; 
+  }
+  
+  .contact-container {
+    background-color: white;
+    color: #333;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px; /* عرض المستطيل */
+    text-align: left; /* محاذاة النص إلى اليسار */
+  }
+  
+  .contact-container h2 {
+    color: #800000;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* لضمان أن كل Label يظهر في سطر منفصل */
+  }
+  
+  .contact-container textarea,
+  .contact-container select,
+  .contact-container button {
+    width: 100%; /* ضمان أن الحقول تأخذ العرض الكامل */
+    margin-bottom: 15px; /* مسافة بين العناصر */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* لجعل الحقول تبقى داخل المستطيل الأبيض */
+  }
+  
+  .contact-container textarea {
+    height: 120px; /* تكبير حجم النص */
+    resize: none; /* منع تغيير حجم الحقل */
+  }
+  
+  .contact-container button {
+    background-color: #800000;
     color: white;
-    margin-right: 20px; 
-}
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .contact-container button:hover {
+    background-color: #660000;
+  }
+  
